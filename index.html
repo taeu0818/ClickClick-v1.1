@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/vendor/bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <script src="./public/vendor/jquery-3.7.1.min.js"></script>
+    <script src="./public/vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="./public/js/helper.js"></script>
+    <script src="./public/js/script.js"></script>
+</head>
+<body>
+
+<!--메인 화면-->
+<div class="main-bg d-none" data-page="1" data-nextPrev="next"></div>
+
+<!--옵션 선택 화면-->
+<div class="option-bg d-none" data-page="2">
+    <div class="bg-white sub-bg">
+        <div class="border-bottom d-flex align-items-center" style="height: 35%">
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="title mb-2">수량선택</div>
+                    <div class="sub-title">원하시는 사진 수량을 선택해주세요.</div>
+                </div>
+                <div class="d-flex gap-4">
+                    <div class="count" data-count="2">2장</div>
+                    <div class="count" data-count="3">3장</div>
+                    <div class="count" data-count="4">4장</div>
+                    <div class="count" data-count="5">5장</div>
+                    <div class="count" data-count="6">6장</div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center" style="height: 50%">
+            <div class="d-flex container justify-content-between">
+                <div class="d-flex flex-column justify-content-center" style="width: 40%">
+                    <div class="title mb-2">배경선택</div>
+                    <div class="sub-title">원하시는 사진의 배경을 선택해주세요.</div>
+                </div>
+                <div class="d-flex justify-content-center" style="width: 25%">
+                    <img class="frame-preview" src="./resource/frame-preview/단색_1.png" width="210">
+                </div>
+                <div class="d-flex align-items-center" style="width: 35%">
+                    <div class="d-flex flex-wrap gap-3 justify-content-end colors" style="width: 600px">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-center" style="height: 15%;gap: 5rem">
+            <div class="nextPrev" data-nextPrev="prev">이전</div>
+            <div class="nextPrev" data-nextPrev="next">다음</div>
+        </div>
+    </div>
+</div>
+
+
+<!--사진 찍기 화면-->
+<div class="photo-bg d-none position-relative" data-page="3">
+    <div class="wait-bg position-absolute top-0 start-0" style="z-index: 1">
+        <div class="bg-white sub-bg">
+            <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                <div class="title text-center" style="line-height: 8rem;font-size: 7rem">잠시 후 <br>사진 촬영이 시작됩니다.</div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 h-100 position-absolute d-flex justify-content-center pt-5">
+        <div>
+            <div class="d-flex gap-4">
+                <div class="info second">7s</div>
+                <div class="info page">0/4</div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex position-relative justify-content-center align-items-center w-100 h-100">
+        <video id="photoVideo" autoplay muted width="0" height="0"></video>
+        <canvas id="photoCanvas" width="1100" height="750" class="bg-white"></canvas>
+        <div class="motion position-absolute" style="width: 1100px;height: 750px"></div>
+    </div>
+</div>
+
+<!--마지막 화면-->
+<div class="last-bg d-none" data-page="4">
+    <div class="bg-white sub-bg">
+        <div class="d-flex justify-content-center align-items-center flex-column" style="height: 85%">
+            <div class="title mb-5" style="font-size: 10rem;line-height: 10rem">감사합니다!</div>
+            <div class="sub-title" style="font-size: 3rem;line-height: 3rem">사진은 밖에서 1~2분 정도 대기하시면 받으실 수 있습니다.</div>
+        </div>
+        <div class="end d-flex align-items-center justify-content-center"
+             style="height: 15%;gap: 5rem;font-size: 2rem;color: #727171">
+            10초 후 자동으로 종료됩니다.
+        </div>
+    </div>
+</div>
+</body>
+</html>
