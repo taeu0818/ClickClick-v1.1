@@ -4,7 +4,7 @@
 <br/> 
 
 ## 🖥️ 배포
-* <a href="https://chalkag.netlify.app" target="_blank">https://chalkag.netlify.app</a>
+* <a href="https://chalkag.netlify.app">https://chalkag.netlify.app</a>
 
 
 <br/> 
@@ -36,6 +36,15 @@
     <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white">
 </div>
 
+<br/>
+
+## 📕 사용 방법
+* 사진 촬영을 위한 웹캠이 사전에 준비되어 있어야 합니다.
+* 메인 페이지 접속 시 전체 화면으로 진행해야 합니다.
+* 페이지 왼쪽 상단 카메라 사용 권한을 허용해야 합니다.
+* 인쇄를 진행할 때 사진을 50mmX150mm 사이즈로 수정해야 합니다.
+
+
 <br/> 
 
 ## ⚙️ 개발 환경
@@ -44,10 +53,7 @@
 * Github Desktop
 * Chrome
 
-<br/> 
+<br/>
 
-## 📕 사용 방법
-* 사진 촬영을 위한 웹캠이 사전에 준비되어 있어야 합니다.
-* 메인 페이지 접속 시 전체 화면으로 진행해야 합니다.
-* 페이지 왼쪽 상단 카메라 사용 권한을 허용해야 합니다.
-* 인쇄를 진행할 때 사진을 50mmX150mm 사이즈로 수정해야 합니다.
+## 폰트
+* <a href="https://www.lottewellfood.com/prcenter/seolleim">시원한 설레임체</a>
