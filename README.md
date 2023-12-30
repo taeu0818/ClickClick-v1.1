@@ -4,7 +4,8 @@
 <br/> 
 
 ## 🖥️ 배포
-* <a href="https://chalkak.netlify.app" target="_blank">https://click.netlify.app</a>
+* <a href="https://chalkag.netlify.app" target="_blank">https://chalkag.netlify.app</a>
+
 
 <br/> 
 
